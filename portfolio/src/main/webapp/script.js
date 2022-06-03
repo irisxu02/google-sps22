@@ -13,6 +13,20 @@
 // limitations under the License.
 
 /**
+ * Makes the navigation bar stick to the top
+ */
+var navbar = document.querySelector('.nav')
+// When the user scrolls the page, execute fixNavbar
+window.onscroll = function() {fixNavbar()};
+function fixNavbar() {
+    if(window.scrollY > nav.offsetHeight + 100) {
+        nav.classList.add('sticky')
+    } else {
+        nav.classList.remove('sticky')
+    }
+}
+
+/**
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
