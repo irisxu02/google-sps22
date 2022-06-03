@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #191919;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;    
+}
+
+.nav {
+  position: fixed;
+  overflow: hidden;
+  background-color: #FAFAFA;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.nav .container {
+  display: flex;
+  max-width: 1024px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+  
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .navlinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav .navlinks a {
+  color: #191919;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #F15025;
+  font-weight: bold;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;
