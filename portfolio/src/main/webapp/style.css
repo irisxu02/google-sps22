@@ -28,7 +28,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  font-size: 15px;
+  font-size: 1em;
   transition: all 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -80,7 +80,7 @@ body {
 
 .actiontext {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: bold;
   color: #F15025;
   margin-bottom: 3rem;
@@ -114,12 +114,13 @@ body {
 .footer .navlinks {
   display: grid;
   gap: 1rem;
+  opacity: 80%;
 }
 
 .footer .navlinks a {
   text-decoration-line: underline;
   color: #191919;
-  padding: auto auto;
+  padding: inherit;
 }
 
 .footer .navlinks a.current,
@@ -128,3 +129,8 @@ body {
   font-weight: bold;
 }
 
+#name {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
