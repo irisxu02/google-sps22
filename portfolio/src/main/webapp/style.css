@@ -18,10 +18,22 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   overflow: auto;
-  text-align: justify;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* || TOP NAVIGATION BAR */
+#header-text {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav {
   position: fixed;
   overflow: hidden;
@@ -78,7 +90,7 @@ body {
   font-weight: bold;
 }
 
-.actiontext {
+.accenttext {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
@@ -88,8 +100,8 @@ body {
 
 .main {
   margin: auto auto;
-  width: 650px;
-  top: 120px;
+  width: 80ch;
+  top: 0rem;
   position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -108,6 +120,8 @@ body {
   animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
   bottom: 0;
   position: relative;
+  width: 100%;
+  min-height: 17rem;
 }
 
 .footer ul {
@@ -135,10 +149,4 @@ body {
 .footer .navlinks a:hover {
   color: #F15025;
   font-weight: bold;
-}
-
-.header-text {
-  font-size: 2rem;
-  text-decoration: none;
-  color: inherit;
 }
