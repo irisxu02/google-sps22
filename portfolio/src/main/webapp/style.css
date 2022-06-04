@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* || SITEWIDE */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,6 +19,7 @@ body {
   margin: 0 auto;    
 }
 
+/* || TOP NAVIGATION BAR */
 .nav {
   position: fixed;
   overflow: hidden;
@@ -74,10 +76,6 @@ body {
   font-weight: bold;
 }
 
-#name {
-  text-decoration: none;
-}
-
 .actiontext {
   text-transform: uppercase;
   font-size: 1rem;
@@ -96,6 +94,7 @@ body {
   margin-top: 20px;
 }
 
+/* || FOOTER */
 .footer.container {
   padding: 3rem 1rem;
   margin: auto auto;
@@ -129,7 +128,7 @@ body {
   font-weight: bold;
 }
 
-#name {
+.header-text {
   font-size: 2rem;
   text-decoration: none;
   color: inherit;
