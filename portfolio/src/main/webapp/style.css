@@ -90,6 +90,24 @@ body {
   width: 650px;
 }
 
+.main {
+  margin: auto auto;
+  width: 650px;
+  top: 120px;
+  position: relative;
+}
+
+.main.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  animation: 1.4s down-enter cubic-bezier(.25,1,.5,1) backwards;
+}
+
 /* || FOOTER */
 .footer.container {
   padding: 3rem 1rem;
