@@ -8,10 +8,55 @@
     line-height: inherit;
 }
 
+/* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #191919;
   padding-bottom: 50px;
+}
+
+ul {
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Animate links on hover: underline from left */
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
 }
 
 .container {
@@ -90,6 +135,7 @@ body {
   font-weight: bold;
 }
 
+/* || TYPOGRAPHY */
 .accenttext {
   text-transform: uppercase;
   font-size: 1rem;
@@ -98,30 +144,37 @@ body {
   margin-bottom: 3rem;
 }
 
+
 .main {
   margin: auto auto;
   width: 80ch;
-  top: 0rem;
+  top: 30px;
   position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 3rem 1rem;
 }
 
+/* || ABOUT SECTION */
 #hero {
   padding-top: 6rem;
   padding-bottom: 6rem;
   animation: 1.4s down-enter cubic-bezier(.25,1,.5,1) backwards;
 }
 
+#about-me {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
 /* || FOOTER */
 .footer {
   padding: 3rem 1rem;
-  margin: auto auto;
+  margin: auto;
   animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
   bottom: 0;
   position: relative;
-  width: 100%;
+  width: 80ch;
   min-height: 17rem;
+  overflow: hidden;
 }
 
 .footer ul {
