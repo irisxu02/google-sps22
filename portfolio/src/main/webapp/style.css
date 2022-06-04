@@ -94,7 +94,7 @@ body {
 .footer.container {
   padding: 3rem 1rem;
   margin: auto auto;
-  max-width: 1024px;
+  animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
 }
 
 .footer ul {
