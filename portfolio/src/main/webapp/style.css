@@ -16,7 +16,9 @@ body {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto;    
+  margin: 0 auto;
+  overflow: auto;
+  text-align: justify;
 }
 
 /* || TOP NAVIGATION BAR */
@@ -84,20 +86,11 @@ body {
   margin-bottom: 3rem;
 }
 
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-}
-
 .main {
   margin: auto auto;
   width: 650px;
   top: 120px;
   position: relative;
-}
-
-.main.container {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -109,10 +102,12 @@ body {
 }
 
 /* || FOOTER */
-.footer.container {
+.footer {
   padding: 3rem 1rem;
   margin: auto auto;
   animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
+  bottom: 0;
+  position: relative;
 }
 
 .footer ul {
