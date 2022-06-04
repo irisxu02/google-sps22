@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: inherit;
 }
 
 body {
@@ -50,8 +49,8 @@ body {
 }
 
 .nav .navlinks {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav .navlinks a {
@@ -61,29 +60,16 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* for fixing nav bar to top of page */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.nav .navlinks a.current,
-.nav .navlinks a:hover {
+.nav a.current,
+.nav a:hover {
   color: #F15025;
   font-weight: bold;
-}
-
-#name {
-  text-decoration: none;
-}
-
-.actiontext {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  color: #F15025;
-  margin-bottom: 3rem;
 }
 
 #content {
@@ -95,36 +81,3 @@ body {
 #greeting-container {
   margin-top: 20px;
 }
-
-.footer.container {
-  padding: 3rem 1rem;
-  margin: auto auto;
-  max-width: 1024px;
-}
-
-.footer ul {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: left;
-  margin: 0;
-  padding: 0;
-}
-
-.footer .navlinks {
-  display: grid;
-  gap: 1rem;
-}
-
-.footer .navlinks a {
-  text-decoration-line: underline;
-  color: #191919;
-  padding: auto auto;
-}
-
-.footer .navlinks a.current,
-.footer .navlinks a:hover {
-  color: #F15025;
-  font-weight: bold;
-}
-
