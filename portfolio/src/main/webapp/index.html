@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <title>Iris' Portfolio</title>
@@ -7,48 +7,66 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <!-- Navigation bar -->
-    <nav class="nav">
-      <div class="container">
-        <h1 id="name"><a href="index.html">Iris Xu</a></h1>
-        <div class="navlinks">
-          <!-- TODO: add anchors -->
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Personal</a></li>
-          </ul>
+    <div id="page-container">
+      <!-- Navigation bar -->
+      <nav class="nav">
+        <div class="container">
+          <h1><a href="index.html" id="header-text">Iris Xu</a></h1>
+          <div class="navlinks">
+            <!-- TODO: add anchors -->
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- TODO: About section -->
-    <div id="content">
-      <h1>Iris' Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <main class="main container">
+        <!-- TODO: About section -->
+        <section id="hero container">
+          <h1>Hello, my name is Iris.</h1>
+          <!-- TODO: Add links to my own pages for extra content -->
+          <p id="about-me">I am studying <a href="#" class="animated-link accenttext2">computer
+            science</a> and <a href="#" class="animated-link accenttext2">mathematics</a> at <a href="#"
+                                                                                                    class="animated-link
+                  accenttext2">UBC</a>. I am interested in human-computer interaction and
+            artificial intelligence, particularly in computer vision for robotics and augmented reality
+            applications. I hope to work on technology for social good and help the world become a more inclusive and
+            accessible place.</p>
+        </section>
+
+        <!-- TODO: Style news section with grid -->
+        <section id="news">
+          <h2 class="accenttext1">What's New</h2>
+          <!-- TODO: Display newest blog posts -->
+          <p></p>
+        </section>
+
+        <!-- TODO: Style projects section -->
+        <section id="projects container">
+          <h2 class="accenttext1">Projects</h2>
+        </section>
+        <!-- TODO: Personal section -->
+        <section id="personal container">
+          <h2 class="accenttext1">Personal</h2>
+          <p>I like to play badminton, bake, and take pictures.</p>
+        </section>
+      </main>
+
+
+      <!-- Footer -->
+      <footer class="footer container">
+        <h2 class="accenttext1">Connect</h2>
+          <ul class="navlinks">
+            <li><a href="https://github.com/irisxu02">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/irisxu02/">LinkedIn</a></li>
+            <li><a href="mailto:irisxu02@gmail.com">Email</a></li>
+          </ul>
+      </footer>
+
     </div>
-
-    <!-- TODO: Projects section -->
-
-    <!-- TODO: Personal section -->
-
-    <!-- Footer -->
-    <footer class="footer container">
-      <h2 class="actiontext">Connect</h2>
-      <div class="navlinks">
-        <!-- TODO: Add social links -->
-        <ul>
-          <li><a href="https://github.com/irisxu02">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/irisxu02/">LinkedIn</a></li>
-          <li><a href="mailto:someone@irisxu02@gmail.com">Email</a></li>
-        </ul>
-      </div>
-    </footer>
-
-
   </body>
 </html>
