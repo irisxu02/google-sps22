@@ -13,6 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #191919;
   padding-bottom: 50px;
+  line-height: 1.5;
 }
 
 ul {
@@ -35,13 +36,13 @@ p {
 }
 
 /* Animate links on hover: underline from left */
-a {
+.animated-link {
   position: relative;
   color: inherit;
   text-decoration: none;
 }
 
-a::before {
+.animated-link::before {
   content: "";
   position: absolute;
   display: block;
@@ -49,13 +50,13 @@ a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #2F8D88;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
 }
 
-a:hover::before {
+.animated-link:hover::before {
   transform: scaleX(1);
 }
 
@@ -99,8 +100,10 @@ a:hover::before {
   max-width: 1024px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 20px;
   transition: all 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 .nav ul {
@@ -136,7 +139,7 @@ a:hover::before {
 }
 
 /* || TYPOGRAPHY */
-.accenttext {
+.accenttext1 {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
@@ -144,11 +147,15 @@ a:hover::before {
   margin-bottom: 3rem;
 }
 
+.accenttext2 {
+  color: #2F8D88;
+}
+
 
 .main {
   margin: auto auto;
-  width: 80ch;
-  top: 30px;
+  width: 100ch;
+  top: 120px;
   position: relative;
   padding: 3rem 1rem;
 }
@@ -172,7 +179,7 @@ a:hover::before {
   animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
   bottom: 0;
   position: relative;
-  width: 80ch;
+  width: 100ch;
   min-height: 17rem;
   overflow: hidden;
 }
@@ -195,6 +202,7 @@ a:hover::before {
 .footer .navlinks a {
   text-decoration-line: underline;
   color: #191919;
+  opacity: 80%;
   padding: inherit;
 }
 
