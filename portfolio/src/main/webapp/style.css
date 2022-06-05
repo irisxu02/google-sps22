@@ -151,7 +151,6 @@ p {
   color: #2F8D88;
 }
 
-
 .main {
   margin: auto auto;
   width: 100ch;
@@ -164,7 +163,23 @@ p {
 #hero {
   padding-top: 6rem;
   padding-bottom: 6rem;
+  animation-name: down-enter;
   animation: 1.4s down-enter cubic-bezier(.25,1,.5,1) backwards;
+}
+
+@keyframes down-enter {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #about-me {
