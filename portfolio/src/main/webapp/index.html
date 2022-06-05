@@ -16,8 +16,8 @@
             <!-- TODO: add anchors -->
             <ul>
               <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Personal</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#personal">Personal</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
@@ -25,7 +25,6 @@
       </nav>
 
       <main class="main container">
-        <!-- TODO: About section -->
         <section id="hero container">
           <h1>Hello, my name is Iris.</h1>
           <!-- TODO: Add links to my own pages for extra content -->
@@ -39,28 +38,43 @@
         </section>
 
         <!-- TODO: Style news section with grid -->
-        <section id="news">
+        <section id="news" class="container">
           <h2 class="accenttext1">What's New</h2>
           <!-- TODO: Display newest blog posts -->
-          <p></p>
+          <ul class="pad-4 grid">
+            <li>
+              <time class="op-80">06/2022</time>
+              <p>As a participant in Google SPS, I will be spending 11 weeks this summer learning coding best
+                practices and building software in collaboration with peers and being mentored by Googlers.</p>
+            </li>
+            <li>
+              <time class="op-80">05/2022</time>
+              <p>I have begun work as an undergraduate administrative assistant for the computer science
+                department at UBC.</p>
+            </li>
+            <li>
+              <time class="op-80">05/2022</time>
+              <p>I am volunteering at Emerging Media Lab on the development of an AR tennis game for HoloLens2.</p>
+            </li>
+          </ul>
         </section>
 
         <!-- TODO: Style projects section -->
-        <section id="projects container">
+        <section id="projects" class="container">
           <h2 class="accenttext1">Projects</h2>
         </section>
         <!-- TODO: Personal section -->
-        <section id="personal container">
+        <section id="personal" class="container">
           <h2 class="accenttext1">Personal</h2>
-          <p>I like to play badminton, bake, and take pictures.</p>
+          <p class="pad-4">I like to play badminton, bake, and take pictures.</p>
         </section>
       </main>
 
 
       <!-- Footer -->
       <footer class="footer container">
-        <h2 class="accenttext1">Connect</h2>
-          <ul class="navlinks">
+        <h2 class="accenttext1 margin-b-3rem">Connect</h2>
+          <ul class="op-80 navlinks grid">
             <li><a href="https://github.com/irisxu02">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/irisxu02/">LinkedIn</a></li>
             <li><a href="mailto:irisxu02@gmail.com">Email</a></li>
