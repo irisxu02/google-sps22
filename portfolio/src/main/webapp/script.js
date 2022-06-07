@@ -15,28 +15,13 @@
 /**
  * Makes the navigation bar stick to the top
  */
-var navbar = document.querySelector('.nav')
+const navbar = document.getElementById('navbar');
 // When the user scrolls the page, execute fixNavbar
 window.onscroll = function() {fixNavbar()};
 function fixNavbar() {
-    if(window.scrollY > nav.offsetHeight + 100) {
-        nav.classList.add('sticky')
+    if(window.scrollY > navbar.offsetHeight + 100) {
+        navbar.classList.add('sticky')
     } else {
-        nav.classList.remove('sticky')
+        navbar.classList.remove('sticky')
     }
-}
-
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
 }
