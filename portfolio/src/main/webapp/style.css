@@ -50,6 +50,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -189,8 +190,8 @@ p {
 
 /* || ABOUT SECTION */
 #hero {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   animation-name: down-enter;
   animation: 1.4s down-enter cubic-bezier(.25,1,.5,1) backwards;
 }
