@@ -97,6 +97,11 @@ p {
   margin-bottom: 3rem;
 }
 
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* || TOP NAVIGATION BAR */
 #header-text {
   font-size: 2rem;
