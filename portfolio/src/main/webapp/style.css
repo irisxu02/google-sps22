@@ -108,6 +108,7 @@ p {
   font-size: 2rem;
   text-decoration: none;
   color: inherit;
+  padding-bottom: 0;
 }
 
 .nav {
@@ -127,13 +128,13 @@ p {
 
 .nav .container {
   display: flex;
-  max-width: 1024px;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   transition: all 0.3s ease-in-out;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 7vw;
+  margin-right: 5vw;
 }
   
 .nav ul {

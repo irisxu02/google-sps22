@@ -9,7 +9,7 @@
   <body>
     <div id="page-container">
       <!-- Navigation bar -->
-      <nav class="nav">
+      <nav class="nav" id="navbar">
         <div class="container">
           <h1><a href="index.html" id="header-text">Iris Xu</a></h1>
           <div class="navlinks">
@@ -24,7 +24,7 @@
         </div>
       </nav>
 
-      <main class="main container">
+      <main class="main container margin-b-3rem">
         <section id="hero" class="container">
           <h1>Hello, my name is Iris.</h1>
           <!-- TODO: Add links to my own pages for extra content -->
@@ -115,8 +115,15 @@
             <p class="pad-4">I like to play badminton, bake, and take pictures.</p>
           </div>
         </section>
+        <section id="contact">
+          <form action="/form-handler" method="POST">
+            <p>Enter some text here:</p>
+            <textarea name="text-input">hello world</textarea>
+            <br/>
+            <input type="submit" />
+          </form>
+        </section>
       </main>
-
       <!-- Footer -->
       <footer class="footer container">
         <h2 class="accenttext1 margin-b-3rem">Connect</h2>
