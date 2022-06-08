@@ -115,23 +115,41 @@
             <p class="pad-4">I like to play badminton, bake, and take pictures.</p>
           </div>
         </section>
-        <section id="contact">
-          <form action="/form-handler" method="POST">
-            <p>Enter some text here:</p>
-            <textarea name="text-input">hello world</textarea>
-            <br/>
-            <input type="submit" />
-          </form>
-        </section>
       </main>
+
       <!-- Footer -->
-      <footer class="footer container">
-        <h2 class="accenttext1 margin-b-3rem">Connect</h2>
-          <ul class="op-80 navlinks grid">
-            <li><a href="https://github.com/irisxu02">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/irisxu02/">LinkedIn</a></li>
-            <li><a href="mailto:irisxu02@gmail.com">Email</a></li>
-          </ul>
+      <footer class="footer">
+        <div class="container flex-space">
+          <div>
+            <h2 class="accenttext1 margin-b-3rem">Connect</h2>
+            <ul class="op-80 navlinks grid">
+              <li><a href="https://github.com/irisxu02">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/irisxu02/">LinkedIn</a></li>
+              <li><a href="mailto:irisxu02@gmail.com">Email</a></li>
+            </ul>
+          </div>
+          <section id="contact">
+            <h2 class="accenttext1 margin-b-3rem pad-1">Drop a message</h2>
+            <form action="/form-handler" method="POST" id="contact-form">
+              <div class="flex-column pad-1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name-input" class="no-resize" required minlength="2"
+                       maxlength="32"></input>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email-input" class="no-resize" required maxlength="64"
+                       size="30"></input>
+              </div>
+              <div class="flex-column pad-1">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject-input" class="no-resize" required
+                       minlength="2" maxlength="60"></input>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message-input" required cols="40" rows="5" aria-required="true"></textarea>
+                <input type="submit" />
+              </div>
+            </form>
+          </section>
+        </div>
       </footer>
 
     </div>
