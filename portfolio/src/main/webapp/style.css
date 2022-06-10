@@ -293,6 +293,17 @@ form .flex-column {
 
 .form-field {
   resize: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  outline: 1px solid #606060;
 }
 
 .form .label {
@@ -317,18 +328,18 @@ form .flex-column {
   width: 100px;
   height: 2rem;
   justify-self: end;
+  opacity: 50%;
 }
 
 #submit-btn:hover,
 #submit-btn:focus {
-  opacity: 80%;
+  opacity: 100%;
 }
 
 #submit-btn:after {
   background-color: #2F8D88;
   content: "Thanks";
 }
-
 
 .card-effect {
   border-radius: 20px;
