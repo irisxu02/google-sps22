@@ -5,6 +5,7 @@
     <title>Iris' Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="page-container">
@@ -132,20 +133,22 @@
             <h2 class="accenttext1 margin-b-3rem pad-1">Drop a message</h2>
             <form action="/form-handler" method="POST" id="contact-form">
               <div class="flex-column pad-1">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name-input" class="no-resize" required minlength="2"
-                       maxlength="32"></input>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email-input" class="no-resize" required maxlength="64"
-                       size="30"></input>
+                <label for="name-field">Name:</label>
+                <input type="text" id="name-field" name="name-input" class="form-field" required minlength="2"
+                       maxlength="32"/>
+                <label for="email-field">Email:</label>
+                <input type="email" id="email-field" name="email-input" class="form-field" required
+                       maxlength="64"
+                       size="30"/>
               </div>
-              <div class="flex-column pad-1">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject-input" class="no-resize" required
-                       minlength="2" maxlength="60"></input>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message-input" required cols="40" rows="5" aria-required="true"></textarea>
-                <input type="submit" />
+              <div class="grid pad-1">
+                <label for="subject-field">Subject:</label>
+                <input type="text" id="subject-field" name="subject-input" class="form-field" required
+                       minlength="2" maxlength="60"/>
+                <label for="message-field">Message:</label>
+                <textarea id="message-field" name="message-input" class="form-field" required cols="40" rows="5"
+                          aria-required="true"></textarea>
+                <input type="submit" class="btn" id="submit-btn"/>
               </div>
             </form>
           </section>
