@@ -284,13 +284,53 @@ p {
 #contact-form {
   display: flex;
   flex-direction: row;
-  padding: 20px 20px;
+  padding: 0;
 }
 
-.no-resize {
+form .flex-column {
+  gap: 1rem;
+}
+
+.form-field {
   resize: none;
 }
 
 .form .label {
   padding: 0;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #191919;
+  color: #FAFAFA;
+  font-size: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#submit-btn {
+  width: 100px;
+  height: 2rem;
+  justify-self: end;
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+  opacity: 80%;
+}
+
+#submit-btn:after {
+  background-color: #2F8D88;
+  content: "Thanks";
+}
+
+
+.card-effect {
+  border-radius: 20px;
+  box-shadow: #2F8D88 1px 0 10px 0;
 }
