@@ -21,6 +21,9 @@
   flex-direction: column;
 }
 
+.blog-style {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
 /* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
