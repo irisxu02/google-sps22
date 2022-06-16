@@ -24,6 +24,7 @@
 .blog-style {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
+
 /* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -88,6 +89,11 @@ p {
   padding-right: 4rem;
 }
 
+.pad-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -104,6 +110,11 @@ p {
 .flex-space {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* || TOP NAVIGATION BAR */
@@ -131,13 +142,12 @@ p {
 
 .nav .container {
   display: flex;
-  max-width: 100%;
+  max-width: 80%;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   transition: all 0.3s ease-in-out;
-  margin-left: 7vw;
-  margin-right: 5vw;
+  position: center;
 }
   
 .nav ul {
@@ -227,14 +237,19 @@ p {
 
 /* || FOOTER */
 .footer {
-  padding: 3rem 1rem;
-  margin: auto;
+  background-color: #FAFAFA;
+  padding: 0;
   animation: 1.8s fade-in cubic-bezier(.25,1,.5,1) backwards;
   bottom: 0;
   position: relative;
-  width: 100ch;
+  width: 100%;
   min-height: 17rem;
-  overflow: hidden;
+}
+
+.footer .container {
+  max-width: 100ch;
+  padding: 3rem 1rem;
+  position: center;
 }
 
 @keyframes fade-in {
@@ -268,4 +283,69 @@ p {
 .footer .navlinks a:hover {
   color: #F15025;
   font-weight: bold;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+form .flex-column {
+  gap: 1rem;
+}
+
+.form-field {
+  resize: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  outline: 1px solid #606060;
+}
+
+.form .label {
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #191919;
+  color: #FAFAFA;
+  font-size: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#submit-btn {
+  width: 100px;
+  height: 2rem;
+  justify-self: end;
+  opacity: 50%;
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+  opacity: 100%;
+}
+
+#submit-btn:after {
+  background-color: #2F8D88;
+  content: "Thanks";
+}
+
+.card-effect {
+  border-radius: 20px;
+  box-shadow: #2F8D88 1px 0 10px 0;
 }
