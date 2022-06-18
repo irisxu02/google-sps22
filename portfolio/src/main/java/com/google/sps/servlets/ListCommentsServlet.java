@@ -31,14 +31,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Servlet responsible for listing messages. */
-@WebServlet("/list-messages")
-public class ListMessagesServlet extends HttpServlet {
+@WebServlet("/list-comments")
+public class ListCommentsServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("Message").setOrderBy(OrderBy.desc("timestamp")).build();
+        Query.newEntityQueryBuilder().setKind("Comment").setOrderBy(OrderBy.desc("timestamp")).build();
     QueryResults<Entity> results = datastore.run(query);
 
     List<Message> messages = new ArrayList<>();
@@ -49,16 +49,16 @@ public class ListMessagesServlet extends HttpServlet {
       String name = entity.getString("name");
       String email = entity.getString("email");
       String subject = entity.getString("subject");
-      String message = entity.getString("message");
+      String comment = entity.getString("comment");
       long timestamp = entity.getLong("timestamp");
 
-      Message m = new Message(id, name, email, subject, message, timestamp);
-      messages.add(m);
+      Comment c = new Comment(id, name, email, subject, comment, timestamp);
+      messages.add(c);
     }
 
     Gson gson = new Gson();
 
     response.setContentType("application/json;");
-    response.getWriter().println(gson.toJson(messages));
+    response.getWriter().println(gson.toJson(comments));
   }
 }

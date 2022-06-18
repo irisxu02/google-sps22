@@ -1,7 +1,7 @@
 package com.data;
 
 /** An item on a message board */
-public final class Message {
+public final class Comment {
 
     private final long id;
     private final String name;
@@ -10,7 +10,7 @@ public final class Message {
     private final String message;
     private final long timestamp;
   
-    public Message(long id, String name, String email, String subject, String message, long timestamp) {
+    public Comment(long id, String name, String email, String subject, String message, long timestamp) {
       this.id = id;
       this.name = name;
       this.email = email;
