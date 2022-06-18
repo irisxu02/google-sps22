@@ -43,7 +43,7 @@ public class NewMessageServlet extends HttpServlet {
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Message");
-    FullEntity taskEntity =
+    FullEntity<IncompleteKey> taskEntity =
         Entity.newBuilder(keyFactory.newKey())
             .set("name", name)
             .set("email", email)

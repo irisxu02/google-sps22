@@ -101,11 +101,7 @@ p {
 
 .grid {
   display: grid;
-  gap: 64px;
-}
-
-.large-gap {
-  gap: 80px;
+  gap: 16px;
 }
 
 .op-80 {
