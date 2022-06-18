@@ -96,7 +96,7 @@ p {
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .op-80 {
