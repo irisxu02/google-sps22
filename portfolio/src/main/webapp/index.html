@@ -44,7 +44,7 @@
         </section>
 
         <section id="news" class="container margin-b-3rem">
-          <h2 class="section-header accenttext1">What's New</h2>
+          <h2 class="accenttext1">What's New</h2>
           <ul class="pad-4 grid">
             <li>
               <time class="op-80">06/2022</time>
@@ -64,61 +64,59 @@
         </section>
 
         <!-- TODO: Add descriptions for projects -->
-        <section id="projects" class="container margin-b-3rem">
-          <h2 class="accenttext1 section-header">Projects</h2>
-          <div class="pad-4 grid large-gap">
-            <div>
-              <h3>CS50's Introduction to Artificial Intelligence with Python</h3>
-              <div class="flex-space">
-                <img src="images/tictactoe.gif" width="47%" alt="animation of a tic-tac-toe game against a computer">
-                <img src="images/minesweeper.png" width="47%" alt="minesweeper pygame on 8x8 grid">
-              </div>
-              <p><br>Various projects (on top of lectures and quizzes) for each week, focused on learning
-                topics such as search, optimization, natural language processing, etc. Experience is
-                gained in working with libraries for machine learning and experimenting with the intelligent systems
-                designed for the course. Animation above shows an intelligent agent - the computer - play the
-                simple game of tic-tac-toe. The minesweeper game above has an option for the AI to make a move,
-                which the program chooses a spot to clear based on probability. (I hit the mine)</p>
+        <section id="projects" class="container grid margin-b-3rem">
+          <h2 class="accenttext1">Projects</h2>
+          <div>
+            <h3 class="pad-4">CS50's Introduction to Artificial Intelligence with Python</h3>
+            <div class="pad-4 flex-space">
+              <img src="images/tictactoe.gif" width="47%" alt="animation of a tic-tac-toe game against a computer">
+              <img src="images/minesweeper.png" width="47%" alt="minesweeper pygame on 8x8 grid">
             </div>
-            <div>
-              <h3>Haar Cascades Face Detection with OpenCV</h3>
-              <img src="images/detect_face.png" width="80%" alt="face with green box around it">
-              <br>
-              <p><br>Hello, description is coming very soon.</p>
-            </div>
-            <div>
-              <h3>Pruning in 2D Adaptation of KD-tree (UBC CPSC221)</h3>
-              <img src="images/prune_demo.PNG" width="80%"
-                   alt="three images with blocky effect with block sizes increasing left to right">
-              <p><br>Inspired by Dimitris
-                Ladopoulos in <a
-                      href="https://mymodernmet.com/algorithm-art-color-study-dimitris-ladopoulos/"
-                      class="accenttext2">this article</a> in creating a blocky artistic effect on images using strategy
-                underlying common lossy image compression algorithms. The original image is recursively split into
-                rectangles based on hue variability and represented in memory as a tree, which is pruned based on
-                average hue of subtrees. The pictures above are created with different tolerances for pruning.</p>
-            </div>
-            <div>
-              <h3>Price Checking Chrome Extension</h3>
-              <img src="images/chrome_ext_screenshot.png" width="80%" alt="screenshot of web browser with chrome extension opened on top right">
-              <p><br>This is a browser extension that helps users check the price of similar products by keeping
-                track of prices of products when online shopping. The goal is to make price comparisons quicker with
-                automatic sorting. This was built with 3 other friends in 24h in a hackathon.</p>
-            </div>
-            <div>
-              <h3>R Shiny App for Interactive Data Visualization</h3>
-              <img src="images/shiny_data_dashboard.png" width="80%"
-                   alt="screenshot of app displaying a table and bar plot">
-              <p><br>A web app with a dynamic ui and reactive elements that make exploring and visualizing
-                tennis player data easier. Custom filters and options can be applied to see more specific data or even
-                to compare player statistics. Behind the scenes, data is collected from official sources, cleaned and
-                organized using both R and Python scripts, before being used in this app.</p>
-            </div>
+            <p class="pad-4">Various projects (on top of lectures and quizzes) for each week, focused on learning
+              topics such as search, optimization, natural language processing, etc. Experience is
+              gained in working with libraries for machine learning and experimenting with the intelligent systems
+              designed for the course. Animation above shows an intelligent agent - the computer - play the
+              simple game of tic-tac-toe. The minesweeper game above has an option for the AI to make a move,
+              which the program chooses a spot to clear based on probability. (I hit the mine)</p>
           </div>
+          <div>
+            <h3 class="pad-4">Haar Cascades Face Detection with OpenCV</h3>
+            <img src="images/detect_face.png" class="pad-4" width="80%" alt="face with green box around it">
+            <p class="pad-4">Hello, description is coming very soon.</p>
+          </div>
+          <div>
+            <h3 class="pad-4">Pruning in 2D Adaptation of KD-tree (UBC CPSC221)</h3>
+            <img src="images/prune_demo.PNG" class="pad-4" width="80%"
+                 alt="three images with blocky effect with block sizes increasing left to right">
+            <p class="pad-4">Inspired by Dimitris
+              Ladopoulos in <a
+                    href="https://mymodernmet.com/algorithm-art-color-study-dimitris-ladopoulos/"
+                    class="accenttext2">this article</a> in creating a blocky artistic effect on images using strategy
+              underlying common lossy image compression algorithms. The original image is recursively split into
+              rectangles based on hue variability and represented in memory as a tree, which is pruned based on
+              average hue of subtrees. The pictures above are created with different tolerances for pruning.</p>
+          </div>
+          <div>
+            <h3 class="pad-4">Price Checking Chrome Extension</h3>
+            <img src="images/chrome_ext_screenshot.png" class="pad-4" width="80%" alt="screenshot of web browser with chrome extension opened on top right">
+            <p class="pad-4">This is a browser extension that helps users check the price of similar products by keeping
+              track of prices of products when online shopping. The goal is to make price comparisons quicker with
+              automatic sorting. This was built with 3 other friends in 24h in a hackathon.</p>
+          </div>
+          <div>
+            <h3 class="pad-4">R Shiny App for Interactive Data Visualization</h3>
+            <img src="images/shiny_data_dashboard.png" class="pad-4" width="80%"
+                 alt="screenshot of app displaying a table and bar plot">
+            <p class="pad-4">A web app with a dynamic ui and reactive elements that make exploring and visualizing
+              tennis player data easier. Custom filters and options can be applied to see more specific data or even
+              to compare player statistics. Behind the scenes, data is collected from official sources, cleaned and
+              organized using both R and Python scripts, before being used in this app.</p>
+          </div>
+
         </section>
         <!-- TODO: Personal section -->
         <section id="personal" class="container margin-b-3rem">
-          <h2 class="accenttext1 section-header">Personal</h2>
+          <h2 class="accenttext1">Personal</h2>
           <div>
             <p class="pad-4">I like to play badminton, bake, and take pictures.</p>
           </div>

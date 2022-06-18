@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* || SITEWIDE */
-:root {
-  --typeface-color: #191919;
-  --primary-color: #F15025;
-  --secondary-color: #2F8D88;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,10 +21,6 @@
   flex-direction: column;
 }
 
-.section-header {	
-  padding-bottom: 40px;	
-}
-
 .blog-style {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
@@ -38,7 +28,8 @@
 /* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
-  color: var(--typeface-color);
+  color: #191919;
+  padding-bottom: 50px;
   line-height: 1.5;
 }
 
@@ -53,14 +44,18 @@ h1 {
 
 h2 {
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 p {
   font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Animate links on hover: underline from left */
@@ -78,7 +73,7 @@ p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--secondary-color);
+  background-color: #2F8D88;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -90,8 +85,8 @@ p {
 
 /* || UTILITIES */
 .pad-4 {
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pad-1 {
@@ -101,11 +96,7 @@ p {
 
 .grid {
   display: grid;
-  gap: 64px;
-}
-
-.large-gap {
-  gap: 80px;
+  gap: 1rem;
 }
 
 .op-80 {
@@ -113,7 +104,7 @@ p {
 }
 
 .margin-b-3rem {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .flex-space {
@@ -172,7 +163,7 @@ p {
 }
 
 .nav .navlinks a {
-  color: var(--typeface-color);
+  color: #191919;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -187,7 +178,7 @@ p {
 
 .nav .navlinks a.current,
 .nav .navlinks a:hover {
-  color: var(--primary-color);
+  color: #F15025;
   font-weight: bold;
 }
 
@@ -196,12 +187,12 @@ p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: #F15025;
   margin-top: 1rem;
 }
 
 .accenttext2 {
-  color: var(--secondary-color);
+  color: #2F8D88;
 }
 
 .main {
@@ -237,6 +228,11 @@ p {
 #about-me {
   font-size: 1.5rem;
   font-style: italic;
+}
+
+/* || NEWS SECTION AND BLOG */
+#news {
+
 }
 
 /* || FOOTER */
@@ -278,14 +274,14 @@ p {
 
 .footer .navlinks a {
   text-decoration-line: underline;
-  color: var(--typeface-color);
+  color: #191919;
   opacity: 80%;
   padding: inherit;
 }
 
 .footer .navlinks a.current,
 .footer .navlinks a:hover {
-  color: var(--primary-color);
+  color: #F15025;
   font-weight: bold;
 }
 
