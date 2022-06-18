@@ -27,11 +27,14 @@
   flex-direction: column;
 }
 
+.section-header {
+  padding-bottom: 40px;
+}
+
 /* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--typeface-color);
-  padding-bottom: 50px;
   line-height: 1.5;
 }
 
@@ -46,18 +49,14 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  padding-bottom: 1rem;
 }
 
 h3 {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 p {
   font-size: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 /* Animate links on hover: underline from left */
@@ -87,13 +86,17 @@ p {
 
 /* || UTILITIES */
 .pad-4 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 64px;
+}
+
+.large-gap {
+  gap: 80px;
 }
 
 .op-80 {
@@ -101,7 +104,7 @@ p {
 }
 
 .margin-b-3rem {
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 .flex-space {
@@ -221,11 +224,6 @@ p {
 #about-me {
   font-size: 1.5rem;
   font-style: italic;
-}
-
-/* || NEWS SECTION AND BLOG */
-#news {
-
 }
 
 /* || FOOTER */
