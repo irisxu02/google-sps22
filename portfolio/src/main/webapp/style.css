@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* || SITEWIDE */
+:root {
+  --typeface-color: #191919;
+  --primary-color: #F15025;
+  --secondary-color: #2F8D88;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +30,7 @@
 /* || GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #191919;
+  color: var(--typeface-color);
   padding-bottom: 50px;
   line-height: 1.5;
 }
@@ -69,7 +75,7 @@ p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2F8D88;
+  background-color: var(--secondary-color);
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -150,7 +156,7 @@ p {
 }
 
 .nav .navlinks a {
-  color: #191919;
+  color: var(--typeface-color);
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -165,7 +171,7 @@ p {
 
 .nav .navlinks a.current,
 .nav .navlinks a:hover {
-  color: #F15025;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -174,12 +180,12 @@ p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
-  color: #F15025;
+  color: var(--primary-color);
   margin-top: 1rem;
 }
 
 .accenttext2 {
-  color: #2F8D88;
+  color: var(--secondary-color);
 }
 
 .main {
@@ -256,13 +262,13 @@ p {
 
 .footer .navlinks a {
   text-decoration-line: underline;
-  color: #191919;
+  color: var(--typeface-color);
   opacity: 80%;
   padding: inherit;
 }
 
 .footer .navlinks a.current,
 .footer .navlinks a:hover {
-  color: #F15025;
+  color: var(--primary-color);
   font-weight: bold;
 }
