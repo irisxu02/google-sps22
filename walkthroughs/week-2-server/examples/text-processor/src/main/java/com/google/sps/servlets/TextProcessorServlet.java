@@ -48,7 +48,7 @@ public final class TextProcessorServlet extends HttpServlet {
     // Respond with the result.
     response.setContentType("text/html;");
     response.getWriter().println(Arrays.toString(words));
-  }
+}
 
   /**
    * @return the request parameter, or the default value if the parameter
